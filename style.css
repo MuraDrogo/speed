@@ -1,0 +1,200 @@
+*{/* ОБОВЯЗКОВО НА КОЖНОМУ ПРОЕКТІ */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700321965.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+/* HEADER */
+.header {
+    background-color:#ca6161af;
+    width: 100%;
+    animation: header 3s linear;
+}
+@keyframes header{
+    0%{
+        transform: translatey(-800px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+.header-body {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-mogo {
+    font-size: 30px;
+    font-weight: 500;
+    color: #3812c5;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.header-menu {
+    display: flex;
+
+}
+.header-menu-link {
+    margin-left: 30px;
+}
+.header-menu-link a{
+    color:#95E1D3;
+    font-size: 20px;
+    font-weight: 100;
+    text-shadow: 0 0 3px #000;
+    font-family: 'Flow Circular', cursive;
+    transition: 0.4s;
+}
+.header-menu-link a:hover{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2bff00;
+}
+
+
+
+.animaj {
+    width: 1300px;
+    height: 550px;
+    margin: 20px auto;
+    position: relative;
+    background-color: rgba(220, 20, 60, 0.438);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+.img-1 {
+    width: 400px;
+    height: 270px;
+    position: absolute;
+    left: 160px;
+    top: 20%;
+    animation: img-1 2s linear;
+    box-shadow: 0 0 15px 15px #f81345;
+}
+@keyframes img-1{
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animaj-2{
+    0%{
+        transform: translatey(0px);
+        box-shadow:
+        -35px -35px 2px -5px rgba(0, 0, 0, 0.842),
+        -15px 15px 2px -5px rgb(48, 13, 245),
+        15px -15px 2px -5px rgba(234, 0, 255, 0.993),
+        25px 25px 2px -5px rgb(156, 240, 1);
+    }
+    50%{
+        box-shadow:
+        -35px -35px 2px -5px rgba(241, 133, 8, 0.842),
+        -15px 15px 2px -5px rgb(40, 245, 13),
+        15px -15px 2px -5px rgba(255, 0, 0, 0.993),
+        25px 25px 2px -5px rgb(1, 240, 208);
+    }
+    100%{
+        box-shadow:
+        -25px -35px 2px -5px rgba(241, 8, 210, 0.842),
+        -5px 15px 2px -5px rgb(245, 13, 13),
+        25px -15px 2px -5px rgba(0, 225, 255, 0.993),
+        25px 25px 2px -5px rgb(85, 1, 240);
+        transform: translatey(0px);
+}
+}
+.img-2 {
+    width: 230px;
+    height: 320px;
+    position: absolute;
+    left: 530px;
+    top: 16%;
+    z-index: 2;
+    box-shadow:
+    -35px -35px 2px -5px rgba(0, 0, 0, 0.842),
+    -15px 15px 2px -5px rgb(48, 13, 245),
+    15px -15px 2px -5px rgba(234, 0, 255, 0.993),
+    25px 25px 2px -5px rgb(156, 240, 1);
+    animation: img-2 3s linear;
+}
+@keyframes img-2{
+    0%{
+        transform: translateY(800px);
+    }
+    
+    100%{
+        transform: translatex(0px);
+    }
+}
+.img-3 {
+    width: 400px;
+    position: absolute;
+    right: 140px;
+    top: 20%;
+    box-shadow: 0 0 15px 15px #0979b9;
+    animation: img-3 2s linear;
+}
+@keyframes img-3{
+    0%{
+        transform: translateX(800px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.audio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:380px;
+    height: 70px;
+    border-radius: 30px;
+    padding-left: 5px;
+    background-color: #78ff09be;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    transform: translateX(-330px);
+    transition: 0.9s;
+    animation: audi0 2s linear alternate infinite;
+}
+@keyframes audi{
+    0%{
+       
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.audio:hover{
+    transform: translateX(0);
+}
+.audio-span {
+    font-size: 50px;
+    color: aliceblue;
+    animation: span 2s linear alternate infinite;
+}
+@keyframes span{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
