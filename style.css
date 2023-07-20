@@ -10,7 +10,7 @@
 body{
     background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700321965.jpg);
     background-size: cover;
-    overflow: hidden;
+    
 }
 /* HEADER */
 .header {
@@ -154,6 +154,9 @@ body{
         transform: translateX(0px);
     }
 }
+main{
+    position: relative;
+}
 .audio{
     display: flex;
     align-items: center;
@@ -201,18 +204,255 @@ body{
 
 
 
+
+.input-box[type="checkbox"]:checked ~ .label-box .button-box { background-color: rgb(10, 10, 168); transform: scaleY(0.9); }
+.input-box { display: none; }
+.label-box { }
+
+
+.button-box:hover { background-color: rgb(128, 38, 212); }
+
+
 .knop {
-    width: 300px;
-    height: 200px;
+    width: 70px;
+    height: 60px;
     border-radius: 50%;
     background-color: #3812c5;
-    margin: 200px auto;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 260px;
+    
 }
 .input-box {
-    
+    display: none;
+    cursor: pointer;
 }
 .label-box {
 }
+.input-box[type="checkbox"]:checked ~ .label-box .span-abb{
+    transform: rotate(495deg);
+    color: rgb(223, 8, 223);
+}
 .span-abb {
     font-size: 60px;
+}
+.span-abb:hover{
+    color: rgb(255, 251, 0);
+}
+.input-box[type="checkbox"]:checked ~ .background-1{
+    transform: translateX(-750px);
+    
+}
+.button-box{
+    width: 260px;
+    height:50px;
+    background-color: #2bff00;
+    color: aliceblue;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0) 0px 5px 5px;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    position: relative;
+    z-index: 3;
+    margin: 100px auto;
+}
+.modal{
+    width: 400px;
+    height: 300px;
+    background-color: #f81345;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 10px #480ecf
+}
+.modal-pidtext{
+    font-size: 20px;
+}
+.background-1{
+    position: relative;
+    z-index: 1;
+    transform: translateX(-1900px);
+    top: -150px;
+}
+.input-box[type="checkbox"]:checked ~ .box{
+    transform: translateX(-30px);
+    z-index: 2;
+}
+.modal-text{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-bottom: 3px solid #000;
+}
+/* FORMA */
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #2c2a2a;
+    padding-left: 30px;
+}
+.box-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.span-1 {
+    font-size: 80px;
+    padding-left: 40px;
+    transition: 0.4s;
+}
+.box:hover .span-1{
+    color: rgb(11, 141, 255);
+}
+.box{
+    height: 500px;
+    transition: 0.5s;
+    width: 450px;
+    margin: 100px auto;
+    backdrop-filter: blur(20px);/* туманить фон */
+    padding: 10px 60px;
+    background-color: #49434388;
+    border-radius: 20px;
+    transition: 0.6px;
+    transform: translateX(-1800px);
+    position: relative;
+    top: -500px;
+}
+
+.block {
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box-label {
+}
+.box-input {
+    background: transparent;/* убирає колір */
+    border: 0;
+    outline: none;
+    padding-left:15px ;
+    color: blue;
+    transition: 0.4s;
+}
+.box-input:hover{
+    border: 50px;
+    background-color: aliceblue;
+}
+.block:hover{
+    color: blue;
+}
+.block:nth-child(1):hover{
+    color: rgb(89, 165, 12);
+}
+.block:nth-child(2):hover{
+    color: rgb(248, 37, 22);
+}
+.block:nth-child(3):hover{
+    color: rgb(212, 21, 187);
+}
+.file-span{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    
+}
+.file {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.file-name {
+    margin: 10px 0px;
+}
+.file:hover{
+    color: blueviolet;
+}
+.file-input {
+    margin: 0px 5px;
+}
+.checkbox-foto{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px ;
+}
+.checkbox-foto1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+.span-6 {
+    font-size: 90px;
+}
+
+.checkbox-input{
+    margin: 20px;
+}
+.checkbox-foto2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+.span-7 {
+    font-size: 90px;
+}
+.text_name{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-family: 'Francois One', sans-serif;
+    color: #cf1313;
+    
+}
+.name-1{
+    margin: 0px 45px;
+}
+.name-2{
+    margin: 0px 100px;
+}
+.checkbox-foto1:hover{
+    color: #7ed120;
+}
+.checkbox-foto2:hover{
+    color: #480ecf;
+}
+.gil{
+    padding-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+.gil-input{
+    
+}
+.gil:hover{
+    color: aqua;
+}
+.button{
+    text-align: center;
+    padding: 30px;
+}
+.buton{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(167, 100, 0);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buton:hover{
+    font-weight: 800;
+    background-color: #ff0404;
 }
